@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/svg/logo.svg"/>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Wheel. Of. Something.</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            <div class="logo-row">
+                <span class="logo-big">WHEEL</span>
+                <img class="logo-wheel" src="assets/svg/logo.svg" />
+                <span class="logo-big">F</span>
+            </div>
+            <div class="logo-row">
+                <span class="logo-big">SOMETHING</span>
+            </div>
+        </h1>
+    </header>
+    <main>
+        <div class="wheel-wrapper">
+            <canvas class="wheel" width="512" height="512"></canvas>
+            <div class="wheel-rim"></div>
+            <div class="spin-button-shadow"></div>
+            <button class="spin-button">SPIN</button>
+            <div class="confetti-launcher"></div>
+        </div>
+        <div class="options-wrapper">
+            <h3 class="options-title">Add Options</h3>
+            <p class="options-instructions">Add one option per line in the textbox below to add them to the wheel!</p>
+            <textarea class="options"></textarea>
+        </div>
+    </main>
+    <script src="assets/confetti.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
