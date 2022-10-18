@@ -16,7 +16,7 @@ I'll start simple with a fun *"spin"* on a Random Number Generator: a Spin the W
 
 Going forward, each day I'll load the wheel with projects from my project-bank and spin it to determine which project I'll be working on.
 
-**[Try it out here](1-wheel-of-something/index.html)**, or check out the [detailed write-up](1-wheel-of-something).
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/1-wheel-of-something/)**, or check out the [detailed write-up](1-wheel-of-something).
 
 #### Tech Stack
 

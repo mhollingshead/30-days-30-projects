@@ -2,7 +2,7 @@
 
 *A simple webapp that takes a list of possible outcomes, puts them on a wheel, and can be spun to randomly select one outcome.*
 
-### [Try it out here!](index.html)
+### [Try it out here!](https://mhollingshead.github.io/30-days-30-projects/1-wheel-of-something/)
 
 ### Tech Stack
 
