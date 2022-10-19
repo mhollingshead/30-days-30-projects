@@ -1,0 +1,136 @@
+.tm-root .tm-header {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.tm-root .tm-header input {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-left: auto;
+    border: 1px solid #ccc;
+}
+
+.tm-root .tm-header input:focus {
+    outline: none;
+    border: 1px solid #4e74ff;
+}
+
+.tm-root .tm-highlight {
+    background-color: #4e74ff33;
+}
+
+.tm-root .tm-table-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.tm-root table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tm-root th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.tm-root th {
+    font-weight: 400;
+    text-align: left;
+}
+
+.tm-root th > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tm-root th.sortable {
+    cursor: pointer;
+}
+
+.tm-root th:first-child, .tm-root td:first-child {
+    border-left: none;
+}
+
+.tm-root th:last-child, .tm-root td:last-child {
+    border-right: none;
+}
+
+.tm-root tr:first-child th {
+    border-top: none;
+}
+
+.tm-root tr:last-child td {
+    border-bottom: none;
+}
+
+.tm-root td {
+    font-weight: 300;
+}
+
+.tm-root tbody tr:nth-child(2n-1) {
+    background-color: #f2f2f2;
+}
+
+.tm-root .tm-head-asc, .tm-root .tm-head-des {
+    color: #ccc;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 0.5rem; 
+    font-family: 'Times New Roman', Times, serif; 
+    user-select: none;
+}
+
+.tm-root .tm-head-asc.active, .tm-root .tm-head-des.active {
+    color: black;
+}
+
+.tm-root th.sortable .tm-head-asc, .tm-root th.sortable .tm-head-des {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tm-root .tm-footer {
+    font-size: .875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tm-root .tm-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tm-root .tm-seek {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: .875rem;
+}
+
+.tm-root .tm-seek:disabled {
+    cursor: initial;
+}
+
+.tm-root .tm-page-link {
+    cursor: pointer;
+}
+
+.tm-root .tm-page-link:hover, .tm-root .tm-seek:hover {
+    text-decoration: underline;
+}
+
+.tm-root .tm-page-link.active {
+    font-weight: bold;
+    cursor: initial;
+}
+
+.tm-root .tm-page-link.active:hover, .tm-root .tm-seek:disabled:hover {
+    text-decoration: none;
+}

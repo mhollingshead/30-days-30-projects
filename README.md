@@ -24,3 +24,15 @@ Going forward, each day I'll load the wheel with projects from my project-bank a
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
 * [canvas-confetti](https://github.com/catdad/canvas-confetti)
+
+### `Day 2` tableme.js <img src="https://img.shields.io/badge/-Library-brightgreen" alt="Library" />
+
+<img src="2-tableme/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+tableme.js is a simple JavaScript table library. It takes a JSON object array and renders a sortable, searchable, and paginatable table in the container of your choice. The components can be styled as desired, but a default theme is included.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/2-tableme/)**, or check out the [documentation](2-tableme).
+
+#### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
