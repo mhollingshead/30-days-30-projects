@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pathfinding Visualization</title>
+</head>
+<body>
+    <main>
+        <div class="controls">
+            <button id="start" class="blue">Find path</button>
+            <button id="reset" class="grey">Reset grid</button>
+            <button id="clear" class="grey">Clear grid</button>
+            <button id="new" class="red" style="margin-left: auto;">New grid</button>
+        </div>
+        <div class="grid-wrapper">
+            <table class="grid"></table>
+        </div>
+        <div class="options">
+            <div class="option-group">
+                <p>Click a cell to add or remove a blocker</p>
+            </div>
+            <div class="option-group">
+                <label>Grid size:</label>
+                <select id="grid-size">
+                    <option value="8x4">8x4</option>
+                    <option value="16x8" selected>16x8</option>
+                    <option value="32x16">32x16</option>
+                    <option value="64x32">64x32</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+    <script>
+        let grid = new Grid();
+
+        const toggleOptionDisabled = () => {
+            const options = document.querySelector('.options');
+            const controls = document.querySelector('.controls');
+            options.classList.toggle('disabled');
+            controls.classList.toggle('disabled');
+        }
+        
+        // Start finding the shortest path
+        document.querySelector('#start').addEventListener('click', async () => {
+            if (state.code === 1) return;
+            if (state.code === 2) grid.reset();
+            // Disable the options while the visualization is running
+            toggleOptionDisabled();
+            // Find the shortest path
+            const path = await grid.findPath();
+            // Enable the options when the visualization has finished
+            toggleOptionDisabled();
+        });
+
+        // Reset the current grid
+        document.querySelector('#reset').addEventListener('click', () => {
+            grid.reset();
+        });
+
+        // Clear the current grid
+        document.querySelector('#clear').addEventListener('click', () => {
+            grid.clear();
+        });
+
+        // Generate a new grid
+        document.querySelector('#new').addEventListener('click', () => {
+            grid = new Grid();
+        });
+
+        // Change the size of the grid
+        document.querySelector('#grid-size').addEventListener('change', e => {
+            const [width, height] = e.target.value.split('x').map(n => parseInt(n));
+            options.width = width;
+            options.height = height;
+            grid = new Grid();
+        });
+    </script>
+</body>
+</html>

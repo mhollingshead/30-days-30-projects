@@ -36,3 +36,17 @@ tableme.js is a simple JavaScript table library. It takes a JSON object array an
 #### Tech Stack
 
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+
+### `Day 3` BFS Pathfinding Visualization <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="3-pathfinding/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A simple Breadth-First Search algorithm implemented in JavaScript used to locate the shortest path between two points. Users can add and remove "blockers" (cells that the algorithm cannot traverse) and select from several grid dimensions.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/3-pathfinding/)**, or check out the [detailed write-up](3-pathfinding).
+
+#### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
