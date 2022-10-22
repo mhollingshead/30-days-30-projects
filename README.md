@@ -50,3 +50,17 @@ A simple Breadth-First Search algorithm implemented in JavaScript used to locate
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+
+### `Day 4` Pixel Battle <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="4-pixel-battle/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A simple webapp that simulates a pixel battle. Users can add up to 8 different "forces" and customize each one's color or name. Each force will fight to control the 200 x 200 pixel battlefield until only one is left standing.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/4-pixel-battle/)**, or check out the [detailed write-up](4-pixel-battle).
+
+#### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
