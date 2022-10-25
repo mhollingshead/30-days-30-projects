@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Equation API Demo</title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <h3 class="required">Expression</h3>
+            <div class="option-group">
+                <label for="text">
+                    <input type="radio" id="text" name="expression" value="text" checked />
+                    <span>Text</span>
+                </label>
+                <input type="text" placeholder="2^x * (x + 1)" value="2^x * (x + 1)" id="text-expression" />
+            </div>
+            <div class="option-group">
+                <label for="tex">
+                    <input type="radio" id="tex" name="expression" value="tex" />
+                    <span>LaTeX</span>
+                </label>
+                <input type="text" placeholder="2^{x} \times \left( x + 1 \right)" value="2^{x} \times \left( x + 1 \right)" id="tex-expression" />
+            </div>
+            <h3>Variables</h3>
+            <div class="scope">
+                <ul id="variables"></ul>
+            </div>
+        </div>
+        <section>
+            <h3>Request</h3>
+            <div class="request">
+                <span id="request-address">http://localhost:8080</span>
+                <select id="request-endpoint">
+                    <option value="evaluate" selected>/evaluate</option>
+                    <option value="simplify">/simplify</option>
+                    <option value="parse">/parse</option>
+                </select>
+                <input type="text" id="request-params" value="?expression=2%5Ex%20*%20(x%20%2B%201)&x=2" readonly />
+                <button id="go">Go</button>
+            </div>
+        </section>
+        <section>
+            <h3>Response</h3>
+            <div class="response">
+                <pre><code class="language-json">{}</code></pre>
+                <div class="results" id="results"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.1/math.min.js"></script>
+    <script src="api/api.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

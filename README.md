@@ -64,3 +64,17 @@ A simple webapp that simulates a pixel battle. Users can add up to 8 different "
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+
+### `Day 5` Equation Solver <img src="https://img.shields.io/badge/-API-red" alt="API" />
+
+<img src="5-equation-solver/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A REST API used to parse, simplify, or evaluate expressions. Expressions can be formatted as either plain text or LaTeX expressions.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/5-equation-solver/demo/)**, or check out the [documentation](5-equation-solver).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> Node.js
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> Express.js
+* [math.js](https://mathjs.org/)
