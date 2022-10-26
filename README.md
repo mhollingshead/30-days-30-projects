@@ -85,7 +85,7 @@ A REST API used to parse, simplify, or evaluate expressions. Expressions can be 
 
 A Tic-Tac-Toe implementation where users can play against multiple engine difficulties while receiving real-time move analysis, position evaluation, and suggestions.
 
-**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/6-tic-tac-toe-engine/demo/)**, or check out the [detailed write-up](6-tic-tac-toe-engine).
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/6-tic-tac-toe-engine/build/)**, or check out the [detailed write-up](6-tic-tac-toe-engine).
 
 ### Tech Stack
 

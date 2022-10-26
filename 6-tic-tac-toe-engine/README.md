@@ -4,7 +4,7 @@
 
 <img src="assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
 
-### [Try it out here!](https://mhollingshead.github.io/30-days-30-projects/6-tic-tac-toe-engine)
+### [Try it out here!](https://mhollingshead.github.io/30-days-30-projects/6-tic-tac-toe-engine/build/)
 
 ### Tech Stack
 
