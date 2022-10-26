@@ -1,0 +1,97 @@
+@use '../../partials/theme' as *;
+
+.Board {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.25rem;
+    position: relative;
+
+    &__square {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        cursor: pointer;
+
+        &:nth-child(2n) {
+            background-color: $square-light;
+        }
+        &:nth-child(2n+1) {
+            background-color: $square-dark;
+        }
+        &:nth-child(1) {
+            border-top-left-radius: 0.25rem;
+        }
+        &:nth-child(3) {
+            border-top-right-radius: 0.25rem;
+        }
+        &:nth-child(7) {
+            border-bottom-left-radius: 0.25rem;
+        }
+        &:nth-child(9) {
+            border-bottom-right-radius: 0.25rem;
+        }
+        &--last-move::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $square-hl;
+        }
+        &--winning-move::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $win-hl;
+        }
+    }
+
+    &__piece {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.Coordinates {
+    position: absolute;
+    width: 31rem;
+    height: 31rem;
+    left: -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    pointer-events: none;
+
+    &__x > div, &__y > div {
+        color: $fg-tertiary;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__y {
+        display: flex;
+        flex-direction: column;
+        width: 32rem;
+
+        & > div {
+            width: 1rem;
+            height: 10rem;
+        }
+    }
+    &__x {
+        display: flex;
+        width: 30rem;
+        color: $fg-secondary;
+        font-weight: bold;
+
+        & > div {
+            width: 10rem;
+            height: 1rem;
+        }
+    }
+}

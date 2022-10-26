@@ -1,0 +1,18 @@
+@use '../../partials/theme' as *;
+
+.Evaluation {
+    width: 1.25rem;
+    height: 30rem;
+    background-color: $bg-secondary;
+    border-radius: 0.25rem;
+    position: relative;
+    overflow: hidden;
+
+    &__bar {
+        width: 1.25rem;
+        position: absolute;
+        bottom: 0;
+        background-color: $fg-primary;
+        transition: 0.5s height;
+    }
+}
