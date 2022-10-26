@@ -1,0 +1,68 @@
+@use '../../partials/theme' as *;
+
+.Moves {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    &__move {
+        color: $fg-secondary;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &::marker {
+            font-weight: 900;
+        }
+        &:nth-child(2n) {
+            background-color: #00000015;
+        }
+    }
+    &__move-code {
+        font-weight: bold;
+
+        b {
+            font-weight: 900;
+        }
+    }
+    &__move-info {
+        display: flex;
+        align-items: center;
+        width: 3.5rem;
+    }
+    &__best-move {
+        font-size: 0.875rem;
+        display: flex;
+        gap: 0.25rem;
+    }
+    &__rating {
+        font-size: 0.875rem;
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        width: 3rem;
+        text-align: center;
+
+        &--x {
+            background-color: white;
+            color: black;
+        }
+        &--o {
+            background-color: black;
+            color: white;
+        }
+    }
+    &__move-number {
+        margin-right: 0.5rem;
+    }
+    &__analysis {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    &__classification {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}

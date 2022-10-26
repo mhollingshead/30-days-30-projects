@@ -2,12 +2,18 @@ import './Board.scss';
 import x from '../../assets/svg/x.svg';
 import o from '../../assets/svg/o.svg';
 
-export default function Board({ boardState, makePlayerMove, lastMove, winner }) {
+export default function Board({ boardState, makePlayerMove, lastMove, hints, winner }) {
     return (
         <div className='Board'>
             {boardState && boardState.split('').map((square, i) => (
                 <div 
-                    className={`Board__square ${lastMove === i ? 'Board__square--last-move' : ''} ${winner?.squares?.includes(i) ? 'Board__square--winning-move' : ''}`} 
+                    className={`Board__square ${
+                        lastMove === i 
+                            ? 'Board__square--last-move' 
+                            : winner?.squares?.includes(i) 
+                            ? 'Board__square--winning-move' 
+                            : hints?.includes(i)
+                            ? 'Board__square--hint' : ''}`} 
                     onClick={() => makePlayerMove(i)}
                     key={i}
                 >

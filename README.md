@@ -78,3 +78,18 @@ A REST API used to parse, simplify, or evaluate expressions. Expressions can be 
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> Node.js
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> Express.js
 * [math.js](https://mathjs.org/)
+
+### `Day 6` Tic-Tac-Toe Engine <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="6-tic-tac-toe-engine/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A Tic-Tac-Toe implementation where users can play against multiple engine difficulties while receiving real-time move analysis, position evaluation, and suggestions.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/6-tic-tac-toe-engine/demo/)**, or check out the [detailed write-up](6-tic-tac-toe-engine).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> React
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> Sass
+* [chart.js](https://www.chartjs.org/)

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { playGameEndSFX, playGameStartSFX, playPlacePieceSFX } from '../../common/sfx';
 import { checkForWinner, getMoves, rateMove } from '../../engine/engine';
 import BoardLayout from '../BoardLayout';
 import Evaluation from '../Evaluation';
@@ -13,6 +14,7 @@ export default function Game() {
     const [computer, setComputer] = useState({ pieces: 'o', difficulty: 1 });
     const [toMove, setToMove] = useState(null);
     const [lastMove, setLastMove] = useState(null);
+    const [hints, setHints] = useState(null);
     const [winner, setWinner] = useState(null);
 
     const newGame = () => {
@@ -21,6 +23,7 @@ export default function Game() {
         setHistory([]);
         setToMove(null);
         setLastMove(null);
+        setHints(null);
         setWinner(null);
     }
 
@@ -34,7 +37,13 @@ export default function Game() {
     }
 
     const startGame = () => {
+        playGameStartSFX();
         setGameState('play');
+    }
+
+    const getHint = () => {
+        if (gameState !== 'play' || toMove !== player.pieces) return;
+        setHints(getMoves(boardState, player));
     }
 
     const makeMove = (piece, square) => {
@@ -42,39 +51,40 @@ export default function Game() {
         const board = boardState.split('');
         const old = `${boardState}`;
         if (toMove === piece && board[square] === '-') {
+            playPlacePieceSFX();
             board[square] = piece;
             setBoardState(board.join(''));
             setLastMove(square);
-            setTimeout(() => setHistory([...history, { 
+            setHistory([...history, { 
                 piece: piece, 
                 square: square, 
                 board: old, 
-                rating: rateMove(old, piece, square) 
-            }]), 0);
+                rating: rateMove(old, piece, square, player.pieces) 
+            }]);
         }
     }
 
     const makePlayerMove = square => {
+        setHints(null);
         makeMove(player.pieces, square);
     }
 
     const makeComputerMove = () => {
-        const moves = getMoves(boardState, computer).sort((a, b) => b.score - a.score);
-        const square = moves[0].moves[Math.floor(Math.random() * moves[0].moves.length)];
-        console.log(moves);
+        const moves = getMoves(boardState, computer);
+        const square = moves[Math.floor(Math.random() * moves.length)];
         setTimeout(() => {
             makeMove(computer.pieces, square);
         }, 1000);
     }
 
-    useEffect(newGame, []);
-
     useEffect(() => {
         if (!boardState) return;
         const winner = checkForWinner(boardState);
         if (winner) {
+            playGameEndSFX();
             setLastMove(null);
             setWinner(winner);
+            setGameState('finished');
         } else {
             setToMove(toMove === 'x' ? 'o' : 'x');
         }
@@ -86,6 +96,8 @@ export default function Game() {
         }
     }, [toMove, gameState]);
 
+    useEffect(newGame, []);
+
     return (
         <main className='Game'>
             <Evaluation 
@@ -96,7 +108,8 @@ export default function Game() {
             <BoardLayout 
                 boardState={boardState} 
                 makePlayerMove={makePlayerMove} 
-                lastMove={lastMove} 
+                lastMove={lastMove}
+                hints={hints}
                 computer={computer} 
                 player={player}
                 winner={winner}
@@ -106,8 +119,9 @@ export default function Game() {
                 computer={computer} 
                 chooseDifficulty={chooseDifficulty} 
                 choosePieces={choosePieces} 
-                startGame={startGame} 
+                startGame={startGame}
                 history={history}
+                getHint={getHint}
                 newGame={newGame}
             />
         </main>

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/css/main.c380d709.css",
+    "main.js": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/js/main.647effad.js",
+    "static/js/787.1fa90fcc.chunk.js": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/js/787.1fa90fcc.chunk.js",
+    "static/media/game-end.mp3": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/game-end.802ef39104f2f7d598b2.mp3",
+    "static/media/game-start.mp3": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/game-start.a27d4111f5250fa5e508.mp3",
+    "static/media/place-piece.mp3": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/place-piece.0ad077b8b9af47a478b5.mp3",
+    "static/media/inaccuracy.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/inaccuracy.12b89f7b4f77ed2a62450dfe917e87b1.svg",
+    "static/media/mistake.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/mistake.9be308658a31159a95d4d93e1746b884.svg",
+    "static/media/excellent-move.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/excellent-move.1834616ccb80bb572501994ee9c07040.svg",
+    "static/media/best-move.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/best-move.c116ec00c8d1ff632cdd380832abde38.svg",
+    "static/media/good-move.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/good-move.79f376acf69cbfbc628fae3677437cdc.svg",
+    "static/media/x.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/x.40107e308aa1d2d91689ae45f4118526.svg",
+    "index.html": "/30-days-30-projects/6-tic-tac-toe-engine/build/index.html",
+    "static/media/o.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/o.45834f210aba6a5a1f8cc867e5dc1a4e.svg",
+    "static/media/lightbulb.svg": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/media/lightbulb.a2127a8b78c580276b5bdff3d4121a2b.svg",
+    "main.c380d709.css.map": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/css/main.c380d709.css.map",
+    "main.647effad.js.map": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/js/main.647effad.js.map",
+    "787.1fa90fcc.chunk.js.map": "/30-days-30-projects/6-tic-tac-toe-engine/build/static/js/787.1fa90fcc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c380d709.css",
+    "static/js/main.647effad.js"
+  ]
+}

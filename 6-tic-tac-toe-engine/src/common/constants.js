@@ -16,3 +16,17 @@ export const squareMap = {
     7: 'b3',
     8: 'c3'
 }
+
+const getGradient = () => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const gradient = ctx.createLinearGradient(0, 48, 0, 0);
+    gradient.addColorStop(0, '#00000065');
+    gradient.addColorStop(0.5, '#00000065');
+    gradient.addColorStop(0.5, '#ffffff65');
+    gradient.addColorStop(1, '#ffffff65');
+
+    return gradient;
+}
+
+export const canvasGradient = getGradient();
