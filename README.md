@@ -93,3 +93,21 @@ A Tic-Tac-Toe implementation where users can play against multiple engine diffic
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> React
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> Sass
 * [chart.js](https://www.chartjs.org/)
+
+### `Day 7` Weather Color <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="7-weather-color/assets/img/sample.gif" style="width: 100%; border-radius: 4px;" />
+
+A single-page weather app that generates a gradient animation using the weather, temperature, and time of day in the user's current location.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/7-weather-color)**, or check out the [detailed write-up](7-weather-color).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+* [stripe-gradient.js](https://www.jqueryscript.net/animation/stripe-gradient-animation.html)
+* [TinyColor](https://github.com/bgrins/TinyColor)
+* [GeoJS](https://www.geojs.io/)
+* [Open-Mateo](https://open-meteo.com/en)
