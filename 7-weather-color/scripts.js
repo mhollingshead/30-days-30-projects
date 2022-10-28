@@ -4,10 +4,12 @@ const intervals = { time: null, render: null }
 const getLocationData = () => fetch(LOCATION_API_URL).then(res => res.json()).catch(() => LOCATION_DEFAULTS);
 const getWeatherData = (options) => fetch(`${WEATHER_API_URL}${options}`).then(res => res.json()).catch(() => ({}));
 
-const getWeatherOptions = (latitude, longitude, timezone) => {
+const getWeatherOptions = (latitude, longitude, timezone, start, end) => {
     return (
         '?hourly=apparent_temperature,weathercode'
         + '&daily=sunrise,sunset'
+        + `&start_date=${start}`
+        + `&end_date=${end}`
         + `&latitude=${latitude}`
         + `&longitude=${longitude}`
         + `&timezone=${timezone}`
@@ -15,10 +17,13 @@ const getWeatherOptions = (latitude, longitude, timezone) => {
 };
 
 const getData = async () => {
+    const date = new Date();
+    const start = `${date.getFullYear()}-${('0' + (date.getMonth()+1)).slice(-2)}-${('0' + (date.getDate()-2)).slice(-2)}`;
+    const end = `${date.getFullYear()}-${('0' + (date.getMonth()+1)).slice(-2)}-${('0' + (date.getDate()+2)).slice(-2)}`;
     // Gather geolocation data
     const locationData = await getLocationData();
     // Gather weather data for the current location
-    const options = getWeatherOptions(locationData.latitude, locationData.longitude, locationData.timezone || 'GMT');
+    const options = getWeatherOptions(locationData.latitude, locationData.longitude, locationData.timezone || 'GMT', start, end);
     const weatherData = await getWeatherData(options);
     // Return the necessary data
     return {
@@ -37,7 +42,7 @@ const extractHourlyData = (hourly, date) => {
     // Convert the dates we're searching through to locale string
     const localeTimes = hourly.time.map(time => new Date(time).toLocaleString());
     // Find the index of the data we're interested in
-    const index = localeTimes.indexOf(searchString) - 1;
+    const index = localeTimes.indexOf(searchString);
     // Return the correct data
     return {
         temperature: hourly.apparent_temperature[index],
