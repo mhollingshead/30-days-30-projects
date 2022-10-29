@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Keyword Extractor</title>
+</head>
+<body>
+    <main>
+        <div class="modals">
+            <div class="form">
+                <div class="form-section">
+                    <div class="form-head">
+                        <h3>Upload file</h3>
+                        <span class="file-types">.pdf or .txt</span>
+                    </div>
+                    <div class="file-input">
+                        <div class="file-wrapper">
+                            <input class="file" type="file" id="file" accept=".pdf, .txt" />
+                        </div>
+                    </div>
+                    <button class="form-button" id="file-submit">Extract keywords</button>
+                </div>
+                <b class="or">or</b>
+                <div class="form-section">
+                    <h3 class="form-heading">Paste text</h3>
+                    <textarea class="text-input" placeholder="Paste raw text here..." id="text"></textarea>
+                    <button class="form-button" id="text-submit">Extract keywords</button>
+                </div>
+            </div>
+            <div class="upload hidden">
+                <h3 class="progress-heading"></h3>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="pages">
+                    Page <span id="current-page">0</span> of <span id="total-pages">0</span>
+                </div>
+            </div>
+            <div class="results hidden">
+                <h3>Keywords</h3>
+                <div class="pos-filter"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th title="Parts of Speech">POS</th>
+                            <th style="width: 7rem">
+                                <div class="stat-label">
+                                    <span class="dot" style="background-color: #3366cc"></span>
+                                    <span>Words</span>
+                                </div>
+                            </th>
+                            <th style="width: 7rem">
+                                <div class="stat-label">
+                                    <span class="dot" style="background-color: #dc3912"></span>
+                                    <span>Sentences</span>
+                                </div>
+                            </th>
+                            <th style="width: 7rem">
+                                <div class="stat-label">
+                                    <span class="dot" style="background-color: #ff9900"></span>
+                                    <span>Paragraphs</span>
+                                </div>
+                            </th>
+                            <th style="width: 15rem"></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="keyword-table"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="js/tesseract/tesseract.js"></script>
+    <script src="js/pdf/pdf.min.js"></script>
+    <script src="js/winkNLP/bundle.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -111,3 +111,20 @@ A single-page weather app that generates a gradient animation using the weather,
 * [TinyColor](https://github.com/bgrins/TinyColor)
 * [GeoJS](https://www.geojs.io/)
 * [Open-Mateo](https://open-meteo.com/en)
+
+### `Day 8` Keyword Extractor <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="8-keyword-extractor/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A webapp that analyzes prominent keywords within text. Users can upload .pdf and .txt files or paste text directly.
+
+### [Try it out here!](https://mhollingshead.github.io/30-days-30-projects/8-keyword-extractor)
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+* [PDF.js](https://mozilla.github.io/pdf.js/)
+* [Tesseract.js](https://tesseract.projectnaptha.com/)
+* [winkNLP](https://winkjs.org/wink-nlp/)

@@ -6,7 +6,7 @@ const getWeatherData = (options) => fetch(`${WEATHER_API_URL}${options}`).then(r
 
 const getWeatherOptions = (latitude, longitude, timezone, start, end) => {
     return (
-        '?hourly=apparent_temperature,weathercode'
+        '?hourly=temperature_2m,weathercode'
         + '&daily=sunrise,sunset'
         + `&start_date=${start}`
         + `&end_date=${end}`
@@ -43,9 +43,10 @@ const extractHourlyData = (hourly, date) => {
     const localeTimes = hourly.time.map(time => new Date(time).toLocaleString());
     // Find the index of the data we're interested in
     const index = localeTimes.indexOf(searchString);
+
     // Return the correct data
     return {
-        temperature: hourly.apparent_temperature[index],
+        temperature: hourly.temperature_2m[index],
         weathercode: hourly.weathercode[index]
     }
 };
