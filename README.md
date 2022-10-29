@@ -118,7 +118,7 @@ A single-page weather app that generates a gradient animation using the weather,
 
 A webapp that analyzes prominent keywords within text. Users can upload .pdf and .txt files or paste text directly.
 
-### [Try it out here!](https://mhollingshead.github.io/30-days-30-projects/8-keyword-extractor)
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/8-keyword-extractor)**, or check out the [detailed write-up](8-keyword-extractor).
 
 ### Tech Stack
 
