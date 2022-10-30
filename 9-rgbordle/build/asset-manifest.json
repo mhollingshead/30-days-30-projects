@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/30-days-30-projects/9-rgbordle/build/static/css/main.f51406e1.css",
-    "main.js": "/30-days-30-projects/9-rgbordle/build/static/js/main.8beecd3a.js",
+    "main.js": "/30-days-30-projects/9-rgbordle/build/static/js/main.220cc5f9.js",
     "static/js/787.368ca9eb.chunk.js": "/30-days-30-projects/9-rgbordle/build/static/js/787.368ca9eb.chunk.js",
     "static/media/theme.svg": "/30-days-30-projects/9-rgbordle/build/static/media/theme.361ab17174f4aa5bffd4b9892784ae30.svg",
     "index.html": "/30-days-30-projects/9-rgbordle/build/index.html",
     "static/media/stats.svg": "/30-days-30-projects/9-rgbordle/build/static/media/stats.96bf19a0573d8b9c3ba0c23f8be32cba.svg",
     "static/media/close.svg": "/30-days-30-projects/9-rgbordle/build/static/media/close.93b2e329a3929af53803d40ed93f4451.svg",
     "main.f51406e1.css.map": "/30-days-30-projects/9-rgbordle/build/static/css/main.f51406e1.css.map",
-    "main.8beecd3a.js.map": "/30-days-30-projects/9-rgbordle/build/static/js/main.8beecd3a.js.map",
+    "main.220cc5f9.js.map": "/30-days-30-projects/9-rgbordle/build/static/js/main.220cc5f9.js.map",
     "787.368ca9eb.chunk.js.map": "/30-days-30-projects/9-rgbordle/build/static/js/787.368ca9eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f51406e1.css",
-    "static/js/main.8beecd3a.js"
+    "static/js/main.220cc5f9.js"
   ]
 }

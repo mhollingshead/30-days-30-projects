@@ -25,8 +25,6 @@ export default function Guess({ guess, isCurrent, makeGuess, statsVisible, gameO
         }
     }
 
-    document.querySelector('form input')?.focus();
-
     return (
         <>{
             isCurrent
@@ -41,6 +39,7 @@ export default function Guess({ guess, isCurrent, makeGuess, statsVisible, gameO
                     onInput={handleInput}
                     onKeyDown={handleKeyDown}
                     disabled={statsVisible || gameOver}
+                    autoFocus={true}
                 />
                 <input 
                     className='Guess__tile' 

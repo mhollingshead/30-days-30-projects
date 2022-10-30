@@ -45,7 +45,7 @@ export default function Stats({ stats, correct, guessNumber, toggleStatsVisible 
                     ))}
                 </div>
                 <div className='Stats__cta'>
-                    <button className='Stats__button' onClick={() => window.location.reload()}>New Game</button>
+                    <button className='Stats__button' onClick={() => window.location.reload()} autoFocus={true}>New Game</button>
                 </div>
                 <div className='Stats__close' onClick={toggleStatsVisible}><CloseIcon className='Stats__icon' /></div>
             </div>
