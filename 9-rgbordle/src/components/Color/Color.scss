@@ -1,0 +1,40 @@
+@use '../../partials/theme' as *;
+
+.Color {
+    position: relative;
+    width: 28.5rem;
+
+    &__image {
+        width: 28.5rem;
+    }
+
+    &__answer {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background-color: var(--bg-primary);
+        color: var(--fg-primary);
+        font-family: monospace;
+        padding: 0.25rem;
+        animation: fadein 1s;
+        font-size: 1rem;
+    }
+};
+
+@keyframes fadein {
+    0% { 
+        opacity: 0; 
+        top: 0;
+    }
+    60% { 
+        opacity: 1; 
+        top: 1rem;
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

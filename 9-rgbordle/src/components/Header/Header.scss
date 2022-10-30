@@ -1,0 +1,57 @@
+@use '../../partials/theme' as *;
+
+.Header {
+    margin-bottom: 1rem;
+    width: 42.5rem;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__cta {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: var(--fg-primary);
+        cursor: pointer;
+    }
+    &__title {
+        color: var(--fg-primary);
+        margin-bottom: 0.5rem;
+    }
+    &__instructions {
+        color: var(--fg-secondary);
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    &__yellow, &__green, &__grey {
+        padding: 2px;
+        color: #fff;
+        font-weight: bold;
+    }
+    &__yellow {
+        background-color: var(--yellow);
+    }
+    &__green {
+        background-color: var(--green);
+    }
+    &__grey {
+        background-color: var(--grey);
+    }
+    a, b {
+        color: var(--fg-primary);
+    }
+    a {
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}

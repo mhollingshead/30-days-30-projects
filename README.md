@@ -128,3 +128,17 @@ A webapp that analyzes prominent keywords within text. Users can upload .pdf and
 * [PDF.js](https://mozilla.github.io/pdf.js/)
 * [Tesseract.js](https://tesseract.projectnaptha.com/)
 * [winkNLP](https://winkjs.org/wink-nlp/)
+
+### `Day 9` RGBordle <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="9-rgbordle/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A wordle-esque game where players try to guess RGB colors in 6 tries or less.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/9-rgbordle/build/)**, or check out the [detailed write-up](9-rgbordle).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> React
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> Sass

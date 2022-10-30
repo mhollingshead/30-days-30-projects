@@ -1,0 +1,22 @@
+@use '../../partials/theme' as *;
+
+.Guesses {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__head {
+        display: flex;
+        gap: 0.5rem;
+    }
+    &__label {
+        width: 4rem;
+        height: 1.5rem;
+        color: var(--fg-secondary);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
