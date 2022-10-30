@@ -18,8 +18,14 @@ const getWeatherOptions = (latitude, longitude, timezone, start, end) => {
 
 const getData = async () => {
     const date = new Date();
-    const start = `${date.getFullYear()}-${('0' + (date.getMonth()+1)).slice(-2)}-${('0' + (date.getDate()-1)).slice(-2)}`;
-    const end = `${date.getFullYear()}-${('0' + (date.getMonth()+1)).slice(-2)}-${('0' + (date.getDate()+1)).slice(-2)}`;
+    // For buffer purposes, set start date to 48 hours before and end date to 48 hours after current date
+    const startDate = new Date(date);
+    startDate.setHours(startDate.getHours() - 48);
+    const endDate = new Date(date);
+    endDate.setHours(endDate.getHours() + 48);
+    // Format the dates for the request
+    const start = `${startDate.getFullYear()}-${('0' + (startDate.getMonth()+1)).slice(-2)}-${('0' + startDate.getDate()).slice(-2)}`;
+    const end = `${endDate.getFullYear()}-${('0' + (endDate.getMonth()+1)).slice(-2)}-${('0' + endDate.getDate()).slice(-2)}`;
     // Gather geolocation data
     const locationData = await getLocationData();
     // Gather weather data for the current location
