@@ -1,0 +1,245 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 30rem;
+    height: 37.5rem;
+    background-color: var(--color-background);
+    overflow: hidden;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 30rem;
+    height: 37.5rem;
+    overflow-y:hidden;
+    border: 1px solid var(--color-details-hairline);
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--color-details-hairline);
+    background-color: var(--color-background-elevation-1);
+}
+
+.tab, .refresh {
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-text-secondary);
+    position: relative;
+}
+
+.tab:hover {
+    background-color: var(--color-background-elevation-2);
+    fill: var(--color-text-primary);
+}
+
+.tab.active {
+    fill: var(--color-text-primary);
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.refresh {
+    margin-left: auto;
+}
+
+.refresh:hover {
+    fill: var(--color-text-primary);
+}
+
+.vars {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.no-data, .no-data-explanation {
+    text-align: center;
+    font-size: .6875rem;
+    min-height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    color: var(--color-text-secondary);
+}
+
+.no-data {
+    margin-top: 1.5rem;
+}
+
+.no-data-explanation {
+    font-size: .6875rem;
+    min-height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.no-data-explanation code {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-size: .625rem;
+    color: var(--color-text-primary);
+}
+
+.entry {
+    border-bottom: 1px solid var(--color-details-hairline-light);
+}
+
+.entry:last-child {
+    border-bottom: none;
+}
+
+.row {
+    min-height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.row:last-child {
+    min-height: calc(1.5rem - 1px);
+}
+
+.row svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    fill: var(--color-text-primary);
+}
+
+.row.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.row.dropdown:hover {
+    background-color: var(--color-background-elevation-1);
+}
+
+.children {
+    position: relative;
+}
+
+.block-line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-left: 1px solid var(--color-details-hairline-light);
+}
+
+.key {
+    color: var(--color-text-secondary);
+    font-size: 0.625rem;
+    min-width: max-content;
+    line-height: 0.625rem;
+}
+
+.dict .key {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-weight: bold;
+}
+
+.tree .key {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: .6875rem;
+}
+
+.styles .key {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.key.leaf {
+    color: var(--color-text-primary);
+}
+
+.row.branch .key {
+    margin-bottom: 0.125rem;
+}
+
+.copyable {
+    padding-right: 0.875rem;
+}
+
+.copyable:hover {
+    padding-right: 0;
+}
+
+.copyable:hover .copy-button {
+    display: inline;
+}
+
+.copy-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0;
+    line-height: 0;
+}
+
+.copy-button svg {
+    fill: var(--color-text-secondary);
+    width: .6875rem;
+    height: .6875rem;
+}
+
+.copy-button:hover svg {
+    fill: var(--color-text-primary);
+}
+
+.copy-button.success svg {
+    fill: var(--color-text-primary);
+}
+
+.copy-button.success::after {
+    content: " Copied to clipboard";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .6875rem;
+    color: var(--color-text-disabled);
+}
+
+.inline-color-wrapper {
+    position: relative;
+}
+
+.inline-color {
+    position: relative;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.dummy-input {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 1.333ch;
+    height: calc(1.333ch + 0.25rem);
+    z-index: 1;
+    opacity: 0;
+}
+
+.rotate90 {
+    transform: rotate(-90deg);
+}
+
+.hidden {
+    display: none;
+}

@@ -142,3 +142,19 @@ A wordle-esque game where players try to guess RGB colors in 6 tries or less.
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> React
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> Sass
+
+### `Day 10` Theme Explorer <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" />
+
+<img src="10-theme-explorer/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A simple Chrome Extension that allows users to explore any webpage's theme styles. The extension grabs any CSS variables defined on the current page's `:root` and `body` and organizes them into several "views" to be explored by the user.
+
+**[Check out the project page here](10-theme-explorer)** for installation and usage.
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+* [Prism.js](https://prismjs.com/)
+* [TinyColor](https://github.com/bgrins/TinyColor)
