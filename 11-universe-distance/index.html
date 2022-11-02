@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="universe"></div>
+    <div class="top">
+        <div class="controller"></div>
+        <div class="settings">
+            <div class="option">
+                <div class="option-label">Scale</div>
+                <input type="range" min="100" max="5000" value="2000" step="100" id="scale" />
+                <div class="option-value">1px = <span id="scale-value">500</span> km</div>
+            </div>
+            <div class="option">
+                <div class="option-label">Average Speed</div>
+                <input type="range" min="100" max="100000" value="30000" step="100" id="speed" />
+                <div class="option-value"><span id="speed-value">30,000,000</span> km/s</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="stats">
+            <div class="stat">
+                <span>Distance from sun</span>
+                <span class="stat-number"><span id="distance">0</span> km</span>
+            </div>
+            <div class="stat">
+                <span>Scroll Speed</span>
+                <span class="stat-number"><span id="scroll-speed">0</span> km/s</span>
+            </div>
+        </div>
+    </div>
+    <script src="lib/sweet-scroll/sweet-scroll.min.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
