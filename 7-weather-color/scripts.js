@@ -158,7 +158,7 @@ const renderWeather = (temperature, weathercode) => {
 
 const render = data => {
     // Get the current date and time
-    const date = new Date();
+    const date = new Date(new Date().toLocaleString('en-US', { timeZone: data.timezone }));
     // Clear any minutes, seconds, and ms since we're only interested in hours
     date.setMinutes(0, 0, 0);
     // Extract the necessary weather data
