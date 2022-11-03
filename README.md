@@ -179,6 +179,8 @@ A simple Chrome Extension that allows users to explore any webpage's theme style
 
 A true to scale visualization of our solar system using scrolling.
 
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/11-solar-system-visualization)**, or check out the [detailed write-up](11-solar-system-visualization).
+
 ### Tech Stack
 
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
