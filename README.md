@@ -18,6 +18,7 @@ I'll include a brief overview of each project as I complete them below and provi
 8. [Keyword Extractor](#day-8-keyword-extractor-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 9. [RGBordle](#day-9-rgbordle-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 10. [Theme Explorer](#day-10-theme-explorer-) <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" />
+11. [Solar System Visualization](#day-11-solar-system-visualization-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 
 <h2>Projects</h2>
 
@@ -171,3 +172,16 @@ A simple Chrome Extension that allows users to explore any webpage's theme style
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
 * [Prism.js](https://prismjs.com/)
 * [TinyColor](https://github.com/bgrins/TinyColor)
+
+### `Day 11` Solar System Visualization <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="11-solar-system-visualization/assets/img/sample.gif" style="width: 100%; border-radius: 4px;" />
+
+A true to scale visualization of our solar system using scrolling.
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+* [Sweet Scroll](https://tsuyoshiwada.github.io/sweet-scroll/)

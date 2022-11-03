@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    --color-text-primary: #fff;
+    --color-text-shadow: 0 0 4px #ffffffaa;
+    --color-primary: #0375ff;
+    --color-primary-hover: #0062d9;
+}
+body {
+    background-color: black;
+    background-image: url(../assets/img/textures/stars.jpeg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.top, .bottom {
+    position: fixed;
+    width: 100vw;
+    padding: 1rem;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.top {
+    top: 0;
+    align-items: flex-start;
+}
+.bottom {
+    bottom: 0;
+    align-items: flex-end;
+}
+.controller {
+    display: flex;
+    gap: 0.5rem;
+}
+.controller button {
+    background-color: var(--color-primary);
+    border: none;
+    outline: none;
+    color: var(--color-text-primary);
+    padding: 0.5rem;
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.controller button:hover {
+    background-color: var(--color-primary-hover);
+}
+.settings {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--color-text-primary);
+    text-shadow: var(--color-text-shadow);
+}
+.settings input {
+    width: 12rem;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+.option-label {
+    width: 100%;
+    font-weight: bold;
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-text-primary);
+    text-shadow: var(--color-text-shadow);
+    font-size: 0.75rem;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.stat-number {
+    font-weight: bold;
+}
+.scale {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-text-primary);
+    text-shadow: var(--color-text-shadow);
+    font-size: 0.75rem;
+}
+.scale-lines {
+    width: 200px;
+    height: 8px;
+    border-bottom: 1px dashed var(--color-text-primary);
+    border-left: 1px dashed var(--color-text-primary);
+    border-right: 1px dashed var(--color-text-primary);
+}
+.universe {
+    position: relative;
+}
+.anchor {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.planet-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.planet {
+    position: relative;
+}
+.planet-atmosphere {
+    position: relative;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 65%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.planet-surface{
+    position: absolute; 
+    height: 100%;
+    width: 100%; 
+    z-index: -1;
+    background-size: cover;
+}
+.measurement-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: calc(100% + 1rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 20rem;
+    color: var(--color-text-primary);
+    text-shadow: var(--color-text-shadow);
+}
+.measurement {
+    min-width: max-content;
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+}
+.measurement-lines {
+    height: calc(100% - 2px);
+    width: 8px;
+    border-top: 1px dashed var(--color-text-primary);
+    border-bottom: 1px dashed var(--color-text-primary);
+    border-left: 1px dashed var(--color-text-primary);
+}
+.label-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: calc(100% + 1rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 20rem;
+    color: var(--color-text-primary);
+    text-shadow: var(--color-text-shadow);
+}
+.label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+@keyframes planetRotate {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
