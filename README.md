@@ -19,6 +19,7 @@ I'll include a brief overview of each project as I complete them below and provi
 9. [RGBordle](#day-9-rgbordle-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 10. [Theme Explorer](#day-10-theme-explorer-) <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" />
 11. [Solar System Visualization](#day-11-solar-system-visualization-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+12. [My Timers](#day-12-my-timers-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 
 <h2>Projects</h2>
 
@@ -187,3 +188,17 @@ A true to scale visualization of our solar system using scrolling.
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
 * [Sweet Scroll](https://tsuyoshiwada.github.io/sweet-scroll/)
+
+### `Day 12` My Timers <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="12-my-timers/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A time management app where users can add and remove timers. Both active and paused timers persist session to session using local storage.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/12-my-timers/build)**, or check out the [detailed write-up](12-my-timers).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> Vue.js
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
