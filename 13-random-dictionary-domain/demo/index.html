@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dictionary Domain API Demo</title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <h3>TLDs <span class="optional">(Optional)</span></h3>
+            <p class="description">The TLDs that the API should search. Only <b>com</b>, <b>org</b>, and <b>net</b> are supported. If no value is provided, all 3 will be searched.</p>
+            <ul class="tlds">
+                <li>
+                    <label>
+                        <input type="checkbox" id="com" checked />
+                        <span>com</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="org" checked />
+                        <span>org</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="net" checked />
+                        <span>net</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <section>
+            <h3>Request</h3>
+            <div class="request">
+                <span id="request-address">http://localhost:8888</span>
+                <input type="text" id="request-params" value="" readonly />
+                <button id="go">Go</button>
+            </div>
+        </section>
+        <section>
+            <h3>Response</h3>
+            <div class="response">
+                <div class="results" id="results"></div>
+                <h4>JSON</h4>
+                <pre><code class="language-json">{}</code></pre>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="api/api.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -20,6 +20,7 @@ I'll include a brief overview of each project as I complete them below and provi
 10. [Theme Explorer](#day-10-theme-explorer-) <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" />
 11. [Solar System Visualization](#day-11-solar-system-visualization-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 12. [My Timers](#day-12-my-timers-) <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+13. [Random Dictionary Domain](#day-13-random-dictionary-domain-) <img src="https://img.shields.io/badge/-API-red" alt="API" />
 
 <h2>Projects</h2>
 
@@ -202,3 +203,18 @@ A time management app where users can add and remove timers. Both active and pau
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> Vue.js
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+
+### `Day 13` Random Dictionary Domain <img src="https://img.shields.io/badge/-API-red" alt="API" />
+
+<img src="13-random-dictionary-domain/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A simple REST API that attempts to find a random dictionary domain available for purchase.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/13-random-dictionary-domain/demo/)**, or check out the [documentation](13-random-dictionary-domain).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> Node.js
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> Express.js
+* [Axios](https://axios-http.com/)
+* [compromise](https://compromise.cool/)
