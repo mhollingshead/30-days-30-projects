@@ -145,3 +145,7 @@ fetch('https://localhost:8888?tlds=com,org')
     }
 /*
 ```
+
+## DISCLAIMER
+
+> The random words that are used to generate domain batches are supplied by an external API. I don't have access to the word bank, nor do I have the ability to filter unseemly words that may appear in query results. If you encounter any crass or inappropriate language, you can try another request or attempt to reach out to the API maintainers via the [API homepage](https://random-word-api.herokuapp.com/home).
