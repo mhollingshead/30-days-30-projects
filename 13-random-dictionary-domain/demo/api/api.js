@@ -47,7 +47,7 @@ const getDefinitions = word => new Promise((resolve) => {
 		const definitions = [];
 		var title, content;
 		if(!data || !data.query || !data.query.pages || data.query.pages[-1]) {
-			resolve([])
+			return resolve([]);
 		}
 		for (var page in data.query.pages) {
 			title = data.query.pages[page].title;
@@ -102,7 +102,7 @@ const getDefinitions = word => new Promise((resolve) => {
 
 			}
 		});
-		resolve(definitions)
+		return resolve(definitions)
 	});
 });
 
