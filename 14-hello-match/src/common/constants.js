@@ -30,14 +30,14 @@ export const languages = [
     'haxe',
     'less',
     'matlab',
-    'mysql',
+    'sql',
     'perl',
     'php',
     'python',
     'r',
     'ruby',
     'rust',
-    'sass',
+    'scss',
     'scala',
     'spss',
     'stylus',
@@ -80,14 +80,14 @@ export const icons = {
     haxe: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haxe/haxe-original.svg',
     less: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg',
     matlab: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg',
-    mysql: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg',
+    sql: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg',
     perl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg',
     php: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
     python: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg',
     r: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg',
     ruby: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg',
     rust: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg',
-    sass: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
+    scss: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
     scala: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original-wordmark.svg',
     spss: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spss/spss-original.svg',
     stylus: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/stylus/stylus-original.svg',
@@ -130,14 +130,14 @@ export const fileNames = {
     haxe: 'Hello.hx',
     less: 'Hello.less',
     matlab: 'Hello.m',
-    mysql: 'Hello.sql',
+    sql: 'Hello.sql',
     perl: 'Hello.pl',
     php: 'Hello.php',
     python: 'Hello.py',
     r: 'Hello.R',
     ruby: 'Hello.rb',
     rust: 'Hello.rs',
-    sass: 'Hello.sass',
+    scss: 'Hello.sass',
     scala: 'Hello.scala',
     spss: 'Hello.spss',
     stylus: 'Hello.styl',
@@ -146,127 +146,135 @@ export const fileNames = {
     terraform: 'Hello.tf',
     typescript: 'Hello.ts',
     zig: 'Hello.zig'
-}
+};
 
 export const codes = {
     bash: `#!/bin/bash
-echo "Hello, World!"`,
+echo "Hello, Match!"`,
     c: `#include <stdio.h>
 int main() {
-    printf("Hello, World!");
+    printf("Hello, Match!");
     return 0;
 }`,
     cpp: `#include <iostream>
 int main() {
-    std::cout << "Hello, World!";
+    std::cout << "Hello, Match!";
     return 0;
 }`,
-    csharp: `System.Console.WriteLine("Hello, World!");`,
+    csharp: `System.Console.WriteLine("Hello, Match!");`,
     fsharp: `[<EntryPoint>]
 let main argv =
-    printfn "Hello, World!"
+    printfn "Hello, Match!"
     0`,
     go: `package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    fmt.Println("Hello, Match!")
 }`,
     haskell: `main :: IO ()
-main = putStrLn "Hello, World!"`,
+main = putStrLn "Hello, Match!"`,
     html: `<!DOCTYPE html>
 <html>
     <body>
-        <p>Hello, World!</p>
+        <p>Hello, Match!</p>
     </body>
 </html>`,
     java: `class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
+        System.out.println("Hello, Match!"); 
     }
 }`,
-    javascript: `console.log('Hello, World!');`,
-    julia: `println("Hello, World!")`,
+    javascript: `console.log('Hello, Match!');`,
+    julia: `println("Hello, Match!")`,
     kotlin: `fun main() {
-    println("Hello, World!")
+    println("Hello, Match!")
 }`,
     latex: `\\documentclass{article}
 \\begin{document}
-Hello, World!
+Hello, Match!
 \\end{document}`,
-    lua: `print("Hello, World!")`,
-    markdown: `# Hello World`,
-    ocaml: `print_string "Hello, World!\n"`,
+    lua: `print("Hello, Match!")`,
+    markdown: `# Hello, Match!`,
+    ocaml: `print_string "Hello, Match!\\n"`,
     angularjs: `$scope.$log = $log;
-$scope.message = "Hello, World!";`,
+$scope.message = "Hello, Match!";`,
     ceylon: `shared void hello() {
-    print("Hello, World!");
+    print("Hello, Match!");
 }`,
-    clojure: `(println "Hello, World!")`,
-    cmake: `message("Hello, World!")`,
-    coffeescript: 'alert "Hello, World!"',
+    clojure: `(println "Hello, Match!")`,
+    cmake: `message("Hello, Match!")`,
+    coffeescript: 'alert "Hello, Match!"',
     css: `body::before {
-    content: "Hello, World!";
+    content: "Hello, Match!";
 }`,
-    crystal: `puts "Hello, World!"`,
+    crystal: `puts "Hello, Match!"`,
     dart: `main() {
-    print('Hello, World!');
+    print('Hello, Match!');
 }`,
-    elixir: `IO.puts "Hello, World!"`,
+    elixir: `IO.puts "Hello, Match!"`,
     elm: `import Html exposing (text)
 main =
-  text "Hello, World!"`,
+  text "Hello, Match!"`,
     erlang: `-module(erlang_hw).
 -export([start/0]). 
 start() ->
-  io:format("Hello, World!~n").`,
-    groovy: `println "Hello, World!"`,
+  io:format("Hello, Match!~n").`,
+    groovy: `println "Hello, Match!"`,
     haxe: `class HelloWorld {
     static function main() {
-        trace("Hello, World!");
+        trace("Hello, Match!");
     }
 }`,
     less: `body::before {
-    content: "Hello, World!"
+    content: "Hello, Match!"
 }`,
-    matlab: `disp('Hello, World!')`,
-    mysql: `SELECT "Hello, World!";`,
+    matlab: `disp('Hello, Match!')`,
+    sql: `SELECT "Hello, Match!";`,
     perl: `#!/usr/bin/perl
-print "Hello, World!\n";`,
-    php: `<?php echo 'Hello, World!'; ?>`,
-    python: `print("Hello, World!")`,
-    r: `cat("Hello, World!")`,
-    ruby: `print "Hello, World!"`,
+print "Hello, Match!\\n";`,
+    php: `<?php echo 'Hello, Match!'; ?>`,
+    python: `print("Hello, Match!")`,
+    r: `cat("Hello, Match!")`,
+    ruby: `print "Hello, Match!"`,
     rust: `fn main() {
-    println!("Hello, World!");
+    println!("Hello, Match!");
 }`,
-    sass: `body::before
-    content: "Hello, World!"`,
+    scss: `body::before
+    content: "Hello, Match!"`,
     scala: `object Hello extends App {
-    println("Hello, World!")
+    println("Hello, Match!")
 }`,
     spss: `BEGIN PROGRAM.
-print "Hello, World!"
+print "Hello, Match!"
 END PROGRAM.`,
     stylus: `body::before
-    content: "Hello, World!"`,
+    content: "Hello, Match!"`,
     svelte: `<script>
-    let message = 'Hello, World!';
+    let message = 'Hello, Match!';
 </script>
 <p>{ message }</p>`,
-    swift: `print("Hello, World!")`,
+    swift: `print("Hello, Match!")`,
     terraform: `output "msg" {
-    value = "Hello, World!"
+    value = "Hello, Match!"
 }`,
-    typescript: `console.log("Hello, World!");`,
+    typescript: `console.log("Hello, Match!");`,
     zig: `const std = @import("std");
 pub fn main() !void {
     const stdout = std.io.getStdOut().writer();
-    try stdout.print("Hello, World!", .{});
+    try stdout.print("Hello, Match!", .{});
 }`
 };
+
+export const autoHighlight = {
+    svelte: true,
+    spss: true,
+    terraform: true,
+    zig: true,
+    angularjs: true
+}
 
 export const difficulties = {
     0: 2,
     1: 4,
     2: 6
-}
+};
