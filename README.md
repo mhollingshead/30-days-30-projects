@@ -2,7 +2,7 @@
 
 Today I challenged myself to create 30 projects in 30 days. Every day for the next month, I'll be building one web-development-related project from scratch and pushing them to this repo in order to track my progress and keep myself honest. Will I succeed? Will I fail? Will I survive? It's too early to tell. But as of right now I'm excited to get started. 
 
-I've accumulated a little over 30 ideas in my "project-bank"––each one belonging to one of several categories: <img src="https://img.shields.io/badge/-App-blue" alt="App" /> <img src="https://img.shields.io/badge/-Library-brightgreen" alt="Library" /> <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" /> or <img src="https://img.shields.io/badge/-API-red" alt="API" />. I've tried to include a wide variety of project types and topics in hopes of exploring and working with many interesting technologies.
+I've accumulated a little over 30 ideas in my "project-bank"––each one belonging to one of several categories: <img src="https://img.shields.io/badge/-App-blue" alt="App" /> <img src="https://img.shields.io/badge/-Library-brightgreen" alt="Library" /> <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" />, <img src="https://img.shields.io/badge/-API-red" alt="API" /> or <img src="https://img.shields.io/badge/-Game-purple" alt="Game" />. I've tried to include a wide variety of project types and topics in hopes of exploring and working with many interesting technologies.
 
 I'll include a brief overview of each project as I complete them below and provide a more detailed write-up in each individual project's directory.
 
@@ -15,15 +15,15 @@ I'll include a brief overview of each project as I complete them below and provi
 | 3 | [BFS Pathfinding Visualization](#day-3-bfs-pathfinding-visualization-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 4 | [Pixel Battle](#day-4-pixel-battle-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 5 | [Equation Solver](#day-5-equation-solver-) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
-| 6 | [Tic-Tac-Toe Engine](#day-6-tic-tac-toe-engine-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> |
+| 6 | [Tic-Tac-Toe Engine](#day-6-tic-tac-toe-engine-) | <img src="https://img.shields.io/badge/-Game-purple" alt="Game" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> |
 | 7 | [Weather Color](#day-7-weather-color-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 8 | [Keyword Extractor](#day-8-keyword-extractor-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
-| 9 | [RGBordle](#day-9-rgbordle-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> |
+| 9 | [RGBordle](#day-9-rgbordle-) | <img src="https://img.shields.io/badge/-Game-purple" alt="Game" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> |
 | 10 | [Theme Explorer](#day-10-theme-explorer-) | <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 11 | [Solar System Visualization](#day-11-solar-system-visualization-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 12 | [My Timers](#day-12-my-timers-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 13 | [Random Dictionary Domain](#day-13-random-dictionary-domain-) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
-| 14 | [Hello, Match!](#day-14-hello-match-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
+| 14 | [Hello, Match!](#day-14-hello-match-) | <img src="https://img.shields.io/badge/-Game-purple" alt="Game" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 
 <h2>Projects</h2>
 
@@ -98,7 +98,7 @@ A REST API used to parse, simplify, or evaluate expressions. Expressions can be 
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> Express.js
 * [math.js](https://mathjs.org/)
 
-### `Day 6` Tic-Tac-Toe Engine <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+### `Day 6` Tic-Tac-Toe Engine <img src="https://img.shields.io/badge/-Game-purple" alt="Game" />
 
 <img src="6-tic-tac-toe-engine/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
 
@@ -148,7 +148,7 @@ A webapp that analyzes prominent keywords within text. Users can upload .pdf and
 * [Tesseract.js](https://tesseract.projectnaptha.com/)
 * [winkNLP](https://winkjs.org/wink-nlp/)
 
-### `Day 9` RGBordle <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+### `Day 9` RGBordle <img src="https://img.shields.io/badge/-Game-purple" alt="Game" />
 
 <img src="9-rgbordle/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
 
@@ -222,7 +222,7 @@ A simple REST API that attempts to find a random dictionary domain available for
 * [Axios](https://axios-http.com/)
 * [compromise](https://compromise.cool/)
 
-### `Day 14` Hello, Match! <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+### `Day 14` Hello, Match! <img src="https://img.shields.io/badge/-Game-purple" alt="Game" />
 
 <img src="14-hello-match/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
 
