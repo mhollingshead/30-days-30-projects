@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
-const { widthMatch, heightMatch, themes, gMatch, rectMatch, matrixMatch, yMatch, rectHeightMatch } = require('./common/constants');
+const { widthMatch, heightMatch, themes, gMatch, rectMatch, matrixMatch, yMatch, rectHeightMatch, errorSvgs } = require('./common/constants');
 const app = express();
 
 // Configuration
@@ -30,8 +30,12 @@ app.use('/', async (req, res) => {
         // By default, equations are assumed to be inline
         display: req.query.display === 'true' ? true : false
     }
+    // Prepare the error SVG if necessary
+    const errorSvg = errorSvgs[options.display ? 'display' : 'inline'](options.theme);
+    // Set the response content-type
+    res.setHeader('Content-Type', 'image/svg+xml');
     // If no LaTeX was sent, return invalid expression
-    if (!latex) return res.status(200).send('Invalid expression');
+    if (!latex) return res.status(200).send(errorSvg);
     // Prepend the \inline flag if display is false
     if (!options.display) {
         baselineLatex = '\\inline&space;\\_' + latex;
@@ -40,7 +44,7 @@ app.use('/', async (req, res) => {
     // Fetch the equation SVG
     const equationSVG = await getEquationSVG(latex);
     // If there was an error fetching the equation SVG, return invalid
-    if (!equationSVG) return res.status(200).send('Invalid expression');
+    if (!equationSVG) return res.status(200).send(errorSvg);
     // Convert equation width and height from pt to px
     const width = parseFloat(equationSVG.match(widthMatch)[0].replace('pt', '')) * 1.3333;
     const height = parseFloat(equationSVG.match(heightMatch)[0].replace('pt', '')) * 1.3333;
@@ -107,7 +111,6 @@ app.use('/', async (req, res) => {
             }
         </svg>`;
 
-    res.setHeader('Content-Type', 'image/svg+xml');
     return res.status(200).send(svg);
 });
 

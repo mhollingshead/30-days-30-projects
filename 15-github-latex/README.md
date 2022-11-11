@@ -31,6 +31,8 @@ http://localhost:8080/?latex=E=mc^2
 
 The API will respond with an SVG image of the LaTeX expression, formatted for use in GitHub READMEs.
 
+If an invalid expression is provided (or if another error occurs) the following will be returned: <img align="middle" src="./assets/img/15-light.svg#gh-light-mode-only" /><img align="middle" src="./assets/img/15-dark.svg#gh-dark-mode-only" />.
+
 ### Embedding LaTeX in a README
 
 To embed a LaTeX expression in [GitHub Flavored Markdown](https://github.github.com/gfm/), simply use an `img` element and set the `src` to the request url:
@@ -102,12 +104,12 @@ Notice that display equations don't require the `img`'s `align` property to be s
 
 Refer to the table below to see examples of each supported theme:
 
-| Theme | `&background=true` | `&background=false` |
-| --- | --- | --- |
-| `default-light` | <img src="./assets/img/6.svg" /> | <img src="./assets/img/7.svg" /> |
-| `default-dark` | <img src="./assets/img/8.svg" /> | <img src="./assets/img/9.svg" /> |
-| `dark-dimmed` | <img src="./assets/img/10.svg" /> | <img src="./assets/img/11.svg" /> |
-| `dark-high-contrast` | <img src="./assets/img/12.svg" /> | <img src="./assets/img/13.svg" /> |
+| Theme | `&background=true` | `&background=false` | Error |
+| --- | --- | --- | --- |
+| `default-light` | <img src="./assets/img/6.svg" /> | <img src="./assets/img/7.svg" /> | <img src="./assets/img/16.svg" /> |
+| `default-dark` | <img src="./assets/img/8.svg" /> | <img src="./assets/img/9.svg" /> | <img src="./assets/img/17.svg" /> |
+| `dark-dimmed` | <img src="./assets/img/10.svg" /> | <img src="./assets/img/11.svg" /> | <img src="./assets/img/18.svg" /> |
+| `dark-high-contrast` | <img src="./assets/img/12.svg" /> | <img src="./assets/img/13.svg" /> | <img src="./assets/img/19.svg" /> |
 
 ### Rendering based on user's current theme
 

@@ -24,6 +24,7 @@ I'll include a brief overview of each project as I complete them below and provi
 | 12 | [My Timers](#day-12-my-timers-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 13 | [Random Dictionary Domain](#day-13-random-dictionary-domain-) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
 | 14 | [Hello, Match!](#day-14-hello-match-) | <img src="https://img.shields.io/badge/-Game-purple" alt="Game" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
+| 15 | [GitHub LaTeX](#day-15-github-latex) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
 
 <h2>Projects</h2>
 
@@ -237,3 +238,21 @@ A simple card-flip memory game with a developer twist: match the programming lan
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
 * [Highlight.js](https://highlightjs.org/)
 * [canvas-confetti](https://www.kirilv.com/canvas-confetti/)
+
+### `Day 15` GitHub LaTeX <img src="https://img.shields.io/badge/-API-red" alt="API" />
+
+A simple API that allows you to embed inline LaTeX expressions like <img align="middle" src="15-github-latex/assets/img/0-light.svg#gh-light-mode-only" /><img align="middle" src="15-github-latex/assets/img/0-dark.svg#gh-dark-mode-only" />, or display expressions like
+
+<p align="center">
+    <img src="15-github-latex/assets/img/1-light.svg#gh-light-mode-only" /><img src="15-github-latex/assets/img/1-dark.svg#gh-dark-mode-only" />
+</p>
+
+into GitHub READMEs, or any GitHub flavored markdown.
+
+**[Check out the documentation here](15-github-latex)** for installation, usage, and examples.
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> Node.js
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> Express.js
+* [Axios](https://axios-http.com/)
