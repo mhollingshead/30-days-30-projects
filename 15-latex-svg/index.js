@@ -20,25 +20,25 @@ const getEquationSVG = tex => new Promise(resolve => {
 
 // Use our routes
 app.use('/', async (req, res) => {
-    let tex = req.query.tex, baselineTex;
+    let latex = req.query.latex, baselineLatex;
     // Set up the options object
     const options = {
         // The default theme is default-light
-        theme: req.query.theme || 'default-light',
+        theme: themes[req.query.theme] ? req.query.theme : 'default-light' ,
         // By default, no background is rendered
         background: req.query.background === 'true' ? true : false,
         // By default, equations are assumed to be inline
         display: req.query.display === 'true' ? true : false
     }
     // If no LaTeX was sent, return invalid expression
-    if (!tex) return res.status(200).send('Invalid expression');
+    if (!latex) return res.status(200).send('Invalid expression');
     // Prepend the \inline flag if display is false
     if (!options.display) {
-        baselineTex = '\\inline&space;\\_' + tex;
-        tex = '\\inline&space;' + tex;
+        baselineLatex = '\\inline&space;\\_' + latex;
+        latex = '\\inline&space;' + latex;
     };
     // Fetch the equation SVG
-    const equationSVG = await getEquationSVG(tex);
+    const equationSVG = await getEquationSVG(latex);
     // If there was an error fetching the equation SVG, return invalid
     if (!equationSVG) return res.status(200).send('Invalid expression');
     // Convert equation width and height from pt to px
@@ -49,7 +49,7 @@ app.use('/', async (req, res) => {
     // If the equation is inline, add an offset to adjust for line-height
     let offsetBottom = 0, offsetTop = 0;
     if (!options.display) {
-        const baselineSVG = await getEquationSVG(baselineTex);
+        const baselineSVG = await getEquationSVG(baselineLatex);
         const gAttributes = baselineSVG.match(gMatch)[0];
         const rectAttributes = baselineSVG.match(rectMatch)[0];
         const transformMatrix = gAttributes.match(matrixMatch)[0].split(' ');
@@ -94,7 +94,7 @@ app.use('/', async (req, res) => {
             />
             ${equationSVG
                 // Insert id and positioning
-                .replace('<svg', `<svg id="equation" x="${Math.max(padding - 1, 0)}" y="${padding + offsetTop}"`)
+                .replace('<svg', `<svg id="equation" x="${padding}" y="${padding + offsetTop}"`)
                 // Remove XML namespace
                 .replace(`xmlns='http://www.w3.org/2000/svg'`, '')
                 // Remove version
