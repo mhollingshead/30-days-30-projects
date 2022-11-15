@@ -20,7 +20,7 @@ export default {
     // Load position data from localStorage
     const positions = JSON.parse(localStorage.getItem('tab-positions')) || {};
     // Load the current book's title from localStorage
-    const title = JSON.parse(localStorage.getItem('tab-book')) || 'The Strange Case of Dr. Jekyll and Mr. Hyde';
+    const title = JSON.parse(localStorage.getItem('tab-book')) || "Alice's Adventures in Wonderland";
     // Get the book data from books.json (title / author)
     const book = books.find(book => book.title === title);
     // Get the initial positions (chapter index / char index)
@@ -36,7 +36,7 @@ export default {
     const text = {
       previous: [],
       current: '',
-      incorrect: {},
+      incorrect: new Object({}),
       next: []
     }
 
@@ -59,20 +59,18 @@ export default {
       this.positions = positions;
     },
     setChars() {
-      this.text = {
-        // Set the chars to the left of the current char
-        previous: this.chars.slice(
-          Math.max(this.position.char - BUFFER, 0), 
-          this.position.char
-        ),
-        // Set the current char
-        current: this.chars[this.position.char] === '\n' ? 'Enter' : this.chars[this.position.char],
-        // Set the chars to the right of the current char
-        next: this.chars.slice(
-          this.position.char + 1, 
-          Math.min(this.position.char + 1 + BUFFER, this.chars.length)
-        )
-      }
+      // Set the chars to the left of the current char
+      this.text.previous = this.chars.slice(
+        Math.max(this.position.char - BUFFER, 0), 
+        this.position.char
+      );
+      // Set the current char
+      this.text.current = this.chars[this.position.char] === '\n' ? 'Enter' : this.chars[this.position.char];
+      // Set the chars to the right of the current char
+      this.text.next = this.chars.slice(
+        this.position.char + 1, 
+         Math.min(this.position.char + 1 + BUFFER, this.chars.length)
+      );
     },
     handleBookSelection(title) {
       // Save the position for the current book
@@ -137,7 +135,7 @@ export default {
     this.setChars();
     // Before unload, save the current position in localStorage
     window.addEventListener('beforeunload', () => {
-      this.savePosition(this.book, this.chapter, this.position);
+      this.savePosition(this.book.title, this.position.chapter, this.position.char);
     });
   }
 }
@@ -146,11 +144,12 @@ export default {
 <template>
   <Header
     :title="book.title"
+    @handleBookSelection="handleBookSelection"
   />
   <Chapter 
     :title="chapter.title" 
     :chapter="position.chapter" 
-    :totalChapters="book.totalChapters" 
+    :totalChapters="book.chapters" 
     :char="position.char" 
     :totalChars="chars.length" 
   />
@@ -161,7 +160,10 @@ export default {
     :next="text.next" 
   />
   <Keyboard 
-    :state="state" 
+    :state="state"
+    :current="text.current"
+    @handleCorrectInput="handleCorrectInput"
+    @handleIncorrectInput="handleIncorrectInput"
   />
 </template>
 

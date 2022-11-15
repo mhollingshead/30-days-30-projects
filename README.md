@@ -25,6 +25,7 @@ I'll include a brief overview of each project as I complete them below and provi
 | 13 | [Random Dictionary Domain](#day-13-random-dictionary-domain-) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
 | 14 | [Hello, Match!](#day-14-hello-match-) | <img src="https://img.shields.io/badge/-Game-purple" alt="Game" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 15 | [GitHub LaTeX](#day-15-github-latex-) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
+| 16 | [Type a Book](#day-16-type-a-book-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 
 <h2>Projects</h2>
 
@@ -116,7 +117,9 @@ A Tic-Tac-Toe implementation where users can play against multiple engine diffic
 
 ### `Day 7` Weather Color <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 
-<img src="7-weather-color/assets/img/sample.gif" style="width: 100%; border-radius: 4px;" />
+<div align="center">
+    <img src="7-weather-color/assets/img/sample.gif" style="width: 100%; border-radius: 4px;" />
+</div>
 
 A single-page weather app that generates a gradient animation using the weather, temperature, and time of day in the user's current location.
 
@@ -181,7 +184,9 @@ A simple Chrome Extension that allows users to explore any webpage's theme style
 
 ### `Day 11` Solar System Visualization <img src="https://img.shields.io/badge/-App-blue" alt="App" />
 
-<img src="11-solar-system-visualization/assets/img/sample.gif" style="width: 100%; border-radius: 4px;" />
+<div align="center">
+    <img src="11-solar-system-visualization/assets/img/sample.gif" style="width: 100%; border-radius: 4px;" />
+</div>
 
 A true to scale visualization of our solar system using scrolling.
 
@@ -256,3 +261,21 @@ into GitHub READMEs, or any GitHub flavored markdown.
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> Node.js
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> Express.js
 * [Axios](https://axios-http.com/)
+
+### `Day 16` Type a Book <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<div align="center">
+    <img src="16-type-a-book/assets/img/sample.gif" style="width: 100%; border-radius: 4px;" />
+</div>
+
+An app that allows users to practice typing while reading a classic novel.
+
+This app started as a simple typing visualization, but as I was looking for bodies of text for the user to type I had the idea of using entire novels start to finish. In testing, I found that *typing* your way through a novel provides a really new and interesting way to experience a book.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/16-type-a-novel/build)**, or check out the [detailed write-up](16-type-a-novel).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> Vue.js
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS

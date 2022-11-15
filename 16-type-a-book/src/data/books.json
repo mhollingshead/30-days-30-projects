@@ -2,36 +2,36 @@
     {
         "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
         "author": "Robert Louis Stevenson",
-        "totalChapters": 10
+        "chapters": 10
     },
     {
         "title": "The Call of the Wild",
         "author": "Jack London",
-        "totalChapters": 7
+        "chapters": 7
     },
     {
         "title": "The Time Machine",
         "author": "H. G. Wells",
-        "totalChapters": 16
+        "chapters": 16
     },
     {
         "title": "Alice's Adventures in Wonderland",
         "author": "Lewis Carroll",
-        "totalChapters": 12
+        "chapters": 12
     },
     {
         "title": "Jane Eyre",
         "author": "Charlotte Brontë",
-        "totalChapters": 38
+        "chapters": 38
     },
     {
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
-        "totalChapters": 9
+        "chapters": 9
     },
     {
         "title": "Heart's Kindred",
         "author": "Zona Gale",
-        "totalChapters": 10
+        "chapters": 10
     }
 ]

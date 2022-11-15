@@ -2,6 +2,7 @@
 export default {
     name: 'Text',
     props: {
+        state: Number,
         previous: Array,
         current: String,
         incorrect: Object,

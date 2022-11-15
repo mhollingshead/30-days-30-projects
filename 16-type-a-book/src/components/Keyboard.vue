@@ -9,7 +9,8 @@ export default {
         }
     },
     props: {
-        state: Number
+        state: Number,
+        current: String
     },
     methods: {
         getKey(code) {
@@ -61,76 +62,78 @@ export default {
 
 <style scoped>
     .keyboard-wrapper {
-    padding: 1rem 0;
-    margin: 0 auto;
-    width: 61.25rem;
+        padding: 1rem 0;
+        margin: 0 auto;
+        width: 61.25rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .keyboard {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
     }
     .keyboard-row {
-    display: flex;
-    gap: 0.25rem;
+        display: flex;
+        gap: 0.25rem;
     }
     .keyboard-keygroup {
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
     }
     .keyboard-key {
-    width: 4rem;
-    height: 100%;
-    padding: 0.25rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #cecece;
-    border-radius: 0.25rem;
+        width: 4rem;
+        height: 100%;
+        padding: 0.25rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #cecece;
+        border-radius: 0.25rem;
     }
     .align-flex-start {
-    align-items: flex-start;
+        align-items: flex-start;
     }
     .align-flex-end {
-    align-items: flex-end;
+        align-items: flex-end;
     }
     .justify-flex-start {
-    justify-content: flex-end;
+        justify-content: flex-end;
     }
     .justify-flex-end {
-    justify-content: flex-start;
+        justify-content: flex-start;
     }
     .justify-center {
-    justify-content: center;
+        justify-content: center;
     }
     .width-1 {
-    width: 4rem;
+        width: 4rem;
     }
     .width-2 {
-    width: 5rem;
+        width: 5rem;
     }
     .width-3 {
-    width: 6rem;
+        width: 6rem;
     }
     .width-4 {
-    width: 7.125rem;
+        width: 7.125rem;
     }
     .width-5 {
-    width: 9.25rem;
+        width: 9.25rem;
     }
     .width-6 {
-    width: 21rem;
+        width: 21rem;
     }
     .small span:nth-child(1) {
-    font-size: 0.875rem;
+        font-size: 0.875rem;
     }
     .keyboard-key.active {
-    background-color: #f2f2f2;
+        background-color: #f2f2f2;
     }
     .keyboard-key.incorrect {
-    background-color: #ffdcd9;
+        background-color: #ffdcd9;
     }
 </style>
