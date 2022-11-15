@@ -272,7 +272,7 @@ An app that allows users to practice typing while reading a classic novel.
 
 This app started as a simple typing visualization, but as I was looking for bodies of text for the user to type I had the idea of using entire novels start to finish. In testing, I found that *typing* your way through a novel provides a really new and interesting way to experience a book.
 
-**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/16-type-a-novel/build)**, or check out the [detailed write-up](16-type-a-novel).
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/16-type-a-book/build)**, or check out the [detailed write-up](16-type-a-book).
 
 ### Tech Stack
 
