@@ -1,0 +1,32 @@
+{
+    "name": "GFM Viewer",
+    "description": "Preview *.md files as styled GitHub flavored markdown",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [ "file://*/*" ],
+            "js": [ 
+                "src/lib/starry-night-bundle.js",
+                "src/lib/hast-util-to-dom-bundle.js",
+                "src/lib/showdown.min.js", 
+                "src/lib/mathjax.min.js",
+                "src/js/common/utils.js", 
+                "src/js/common/postprocessors.js", 
+                "src/js/content.js" 
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": [ "file://*/*" ],
+            "resources": [ 
+                "src/css/themes/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "src/html/popup.html"
+    },
+    "icons": {}
+}
