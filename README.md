@@ -26,6 +26,7 @@ I'll include a brief overview of each project as I complete them below and provi
 | 14 | [Hello, Match!](#day-14-hello-match-) | <img src="https://img.shields.io/badge/-Game-purple" alt="Game" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 15 | [GitHub LaTeX](#day-15-github-latex-) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
 | 16 | [Type a Book](#day-16-type-a-book-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
+| 17 | [Theme Explorer](#day-17-gfm-viewer-) | <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 
 <h2>Projects</h2>
 
@@ -279,3 +280,22 @@ This app started as a simple typing visualization, but as I was looking for bodi
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> Vue.js
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+
+### `Day 17` GFM Viewer <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" />
+
+<img src="17-gfm-viewer/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A simple Chrome Extension that auto-renders raw `*.md` files to GitHub-styled HTML.
+
+The extension aims to render GitHub flavored markdown as similarly to GitHub's markdown rendering engine as possible in order to accurately visualize how the markdown will render on GitHub.
+
+**[Check out the project page here](17-gfm-viewer)** for installation and usage.
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> HTML
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS
+* [Showdown](https://github.com/showdownjs/showdown)
+* [starry-night](https://github.com/wooorm/starry-night)
+* [MathJax](https://www.mathjax.org/)
