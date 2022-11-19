@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/30-days-30-projects/18-notes-app/build/static/css/main.f211ab0e.css",
+    "main.js": "/30-days-30-projects/18-notes-app/build/static/js/main.c0b04bfc.js",
+    "static/media/light-mode.svg": "/30-days-30-projects/18-notes-app/build/static/media/light-mode.98695c12bff2a955213adadbdcc4ff2e.svg",
+    "static/media/layout-grid.svg": "/30-days-30-projects/18-notes-app/build/static/media/layout-grid.c475400ad0c2784e9495f4ab234a8f1a.svg",
+    "index.html": "/30-days-30-projects/18-notes-app/build/index.html",
+    "static/media/new-note.svg": "/30-days-30-projects/18-notes-app/build/static/media/new-note.406c660ef5eb0f6c7aad3805c591f97e.svg",
+    "static/media/local-storage.svg": "/30-days-30-projects/18-notes-app/build/static/media/local-storage.5af128f5d89ff07d8c03e241288cf051.svg",
+    "static/media/delete.svg": "/30-days-30-projects/18-notes-app/build/static/media/delete.d3933edc1322c09a395c786bf5087ad5.svg",
+    "static/media/vertical-dots.svg": "/30-days-30-projects/18-notes-app/build/static/media/vertical-dots.b1846ca59846b1399b758c0a3ae8e0ff.svg",
+    "static/media/dark-mode.svg": "/30-days-30-projects/18-notes-app/build/static/media/dark-mode.f9503508eecf529816482d41735e1a5a.svg",
+    "static/media/layout-row.svg": "/30-days-30-projects/18-notes-app/build/static/media/layout-row.9180b805e7d029c5cd99d38824d1e014.svg",
+    "static/media/chevron-left.svg": "/30-days-30-projects/18-notes-app/build/static/media/chevron-left.2ca12ca44eac3a491b851a6d0a36ba69.svg",
+    "main.f211ab0e.css.map": "/30-days-30-projects/18-notes-app/build/static/css/main.f211ab0e.css.map",
+    "main.c0b04bfc.js.map": "/30-days-30-projects/18-notes-app/build/static/js/main.c0b04bfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f211ab0e.css",
+    "static/js/main.c0b04bfc.js"
+  ]
+}

@@ -1,0 +1,47 @@
+.NotePreview {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        width: 200px;
+        height: 150px;
+        position: relative;
+        border-radius: 0.25rem;
+        border: 1px solid var(--border-primary);
+        background-color: var(--bg-secondary);
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+
+        &--active {
+            outline: 1px solid var(--hl-primary);
+            border: 1px solid var(--hl-primary);
+            background-color: var(--hl-secondary);
+        }
+    }
+
+    &__document {
+        width: 600px;
+        transform: scale(0.3333);
+        transform-origin: top left;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &__title, &__date {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__date {
+        font-size: 0.875rem;
+        color: var(--fg-muted);
+    }
+}

@@ -27,6 +27,7 @@ I'll include a brief overview of each project as I complete them below and provi
 | 15 | [GitHub LaTeX](#day-15-github-latex-) | <img src="https://img.shields.io/badge/-API-red" alt="API" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="16" height="16" /> |
 | 16 | [Type a Book](#day-16-type-a-book-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 17 | [Theme Explorer](#day-17-gfm-viewer-) | <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
+| 18 | [Notes App](#day-18-notes-app-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> |
 
 <h2>Projects</h2>
 
@@ -299,3 +300,19 @@ The extension aims to render GitHub flavored markdown as similarly to GitHub's m
 * [Showdown](https://github.com/showdownjs/showdown)
 * [starry-night](https://github.com/wooorm/starry-night)
 * [MathJax](https://www.mathjax.org/)
+
+### `Day 18` Notes App <img src="https://img.shields.io/badge/-App-blue" alt="App" />
+
+<img src="18-notes-app/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+A React / Redux notes app loosely based on Apple's Notes app.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/18-notes-app/build)**, or check out the [detailed write-up](18-notes-app).
+
+### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> React
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" width="16" height="16" /> Redux
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> Sass
+* [Quill](https://quilljs.com/)

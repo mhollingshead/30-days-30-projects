@@ -1,0 +1,38 @@
+.SidebarHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-primary);
+
+    &__options {
+        display: flex;
+    }
+
+    &__option-group {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    &__option {
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 24px;
+        width: 28px;
+        padding: 3px 5px;
+        color: var(--fg-secondary);
+
+        &:hover {
+            color: var(--hl-primary);
+        }
+        &--active {
+            color: var(--hl-primary);
+        }
+
+        svg {
+            width: 100%;
+        }
+    }
+}

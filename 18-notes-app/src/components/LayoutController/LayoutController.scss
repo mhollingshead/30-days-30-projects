@@ -1,0 +1,55 @@
+.LayoutController {
+    min-width: 8px;
+    height: 100vh;
+    background-color: var(--border-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.3s;
+
+    &:hover, &:active {
+        background-color: var(--border-secondary);
+    }
+
+    &__collapse, &__expand {
+        width: 8px;
+        height: 48px;
+        background-color: var(--fg-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: var(--hl-primary);
+        }
+
+        svg {
+            fill: var(--bg-primary);
+            fill-rule: evenodd;
+            width: 4px;
+        }
+    }
+
+    &__expand {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__resize {
+        height: calc(50vh - 24px);
+        width: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: ew-resize;
+
+        svg {
+            fill: var(--fg-secondary);
+            fill-rule: evenodd;
+            width: 3px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.NoteSummary {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border-primary);
+    position: relative;
+    cursor: default;
+
+    &--active {
+        background-color: var(--hl-secondary);
+    }
+
+    &__body {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    &__title {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__text {
+        font-size: 0.875rem;
+        color: var(--fg-secondary);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__date {
+        font-size: 0.875rem;
+        color: var(--fg-muted);
+        min-width: max-content;
+    }
+}
+
+.hidden {
+    display: none;
+}

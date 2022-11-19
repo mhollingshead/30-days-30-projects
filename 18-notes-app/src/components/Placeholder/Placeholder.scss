@@ -1,0 +1,25 @@
+.Placeholder {
+    height: 100vh;
+    flex-grow: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-secondary);
+
+    &__text {
+        text-align: center;
+        font-size: 0.875rem;
+        width: 12rem;
+        color: var(--fg-muted);
+    }
+
+    &__link {
+        font-weight: 600;
+        color: var(--hl-primary);
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

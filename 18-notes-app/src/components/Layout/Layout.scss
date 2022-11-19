@@ -1,0 +1,32 @@
+.Layout {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--fg-primary);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.light {
+    --bg-primary: #fff;
+    --bg-secondary: #f2f2f2;
+    --fg-primary: #000;
+    --fg-secondary: #444;
+    --fg-muted: #888;
+    --hl-primary: #06c;
+    --hl-secondary: #0066cc10;
+    --border-primary: #ccc;
+    --border-secondary: #bbb;
+}
+
+.dark {
+    --bg-primary: #111;
+    --bg-secondary: #131313;
+    --fg-primary: #fff;
+    --fg-secondary: #bbb;
+    --fg-muted: #777;
+    --hl-primary: #409fff;
+    --hl-secondary: #409fff10;
+    --border-primary: #333;
+    --border-secondary: #444;
+}
