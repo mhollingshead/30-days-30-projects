@@ -28,6 +28,7 @@ I'll include a brief overview of each project as I complete them below and provi
 | 16 | [Type a Book](#day-16-type-a-book-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 17 | [Theme Explorer](#day-17-gfm-viewer-) | <img src="https://img.shields.io/badge/-Extension-yellow" alt="Extension" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 | 18 | [Notes App](#day-18-notes-app-) | <img src="https://img.shields.io/badge/-App-blue" alt="App" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> |
+| 19 | [DevToolsConsole.js](#day-19-devtools-console-) | <img src="https://img.shields.io/badge/-Library-brightgreen" alt="Library" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> |
 
 <h2>Projects</h2>
 
@@ -316,3 +317,16 @@ A React / Redux notes app loosely based on Apple's Notes app.
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" width="16" height="16" /> Redux
 * <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="16" height="16" /> Sass
 * [Quill](https://quilljs.com/)
+
+### `Day 19` DevToolsConsole.js <img src="https://img.shields.io/badge/-Library-brightgreen" alt="Library" />
+
+<img src="19-devtools-console/assets/img/sample.png" style="width: 100%; border-radius: 4px;" />
+
+Have you ever wished you could embed Chrome's DevTools console into an application? No? Well this library does it anyway.
+
+**[Try it out here](https://mhollingshead.github.io/30-days-30-projects/19-devtools-console/)**, or check out the [documentation](19-devtools-console).
+
+#### Tech Stack
+
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="16" height="16" /> JavaScript
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="16" height="16" /> CSS

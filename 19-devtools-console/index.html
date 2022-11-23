@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./DevToolsConsole.css" />
+    <link rel="stylesheet" href="./DevToolsConsole/DevToolsConsole.css" />
     <title>Document</title>
     <style>
         body {
@@ -19,15 +19,14 @@
             position: fixed;
         }
         #container {
-            width: 600px;
-            height: 750px;
+            width: 450px;
+            height: 650px;
         }
     </style>
 </head>
 <body>
     <div id="container"></div>
-    <input type="color" />
-    <script src="DevToolsConsole.js"></script>
+    <script src="DevToolsConsole/DevToolsConsole.js"></script>
     <script>
         new DevToolsConsole('#container');
     </script>
@@ -41,8 +40,34 @@
         console.log(`Here's a custom error created by new Error and logged by console.error:`);
         console.error(new Error('Custom Error!'));
         console.log(`The only notable differences between these logs and the Chrome DevTools logs are:\n\n1. Warnings and Errors are not collapsable (as we don't have detailed stacktrace information), and\n\n2. Links to files are note followable (as we don't have access to the Chrome DevTools frontend).`);
-        console.warn('Uh oh! Here come some parameters:');
-        console.log(true, 42, NaN, null, undefined, function(a, b) { return a + b });
+        console.warn('Uh oh! Here come some values:');
+        console.log(
+            true, 
+            42, 
+            NaN, 
+            null, 
+            undefined, 
+            function(a, b) { return a + b }, 
+            new Date(), 
+            /[a-zA-Z]/g, 
+            BigInt(9007199254740991)
+        );
+        console.warn('and here come some objects:');
+        console.log(
+            [
+                'Hello, Array!',
+                1,
+                true,
+                (x) => console.log(x**2)
+            ],
+            {
+                a: 'Hello, Object!',
+                b: 2,
+                c: false,
+                d: (x) => console.log(x+2)
+            }
+        );
+        console.log('You can try using console.log, console.warn, or console.error to print some custom messages!')
     </script>
 </body>
 </html>

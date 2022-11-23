@@ -10,6 +10,30 @@
     --color-text-secondary: rgb(95, 99, 103);
     --color-text-warn: rgb(91, 59, 1);
     --color-text-error: rgb(255, 0, 0);
+    --color-text-grey-1: #80868a;
+    --color-text-grey-2: #5f6367;
+    --color-text-blue: #1a1aa6;
+    --color-text-red: #c80200;
+    --color-text-green: #226d25;
+}
+
+.DevToolsConsole.dark {
+    --color-background: rgb(32, 33, 36);
+    --color-background-warn: rgb(51, 42, 0);
+    --color-background-error: rgb(41, 0, 0);
+    --color-border-primary: rgb(74, 76, 80);
+    --color-border-light: rgb(58, 58, 58);
+    --color-border-warn: rgb(101, 85, 0);
+    --color-border-error: rgb(91, 1, 0);
+    --color-text-primary: rgb(190, 198, 207);
+    --color-text-secondary: rgb(154, 160, 166);
+    --color-text-warn: rgb(242, 170, 39);
+    --color-text-error: rgb(255, 128, 128);
+    --color-text-grey-1: #80868a;
+    --color-text-grey-2: #9aa0a6;
+    --color-text-blue: #9980ff;
+    --color-text-red: #36d4c7;
+    --color-text-green: #ababab;
 }
 
 .DevToolsConsole {
@@ -32,7 +56,7 @@
 }
 .DevToolsConsole .gutter {
     width: 28px;
-    height: 14px;
+    height: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,13 +102,31 @@
 }
 .DevToolsConsole .parameter-null,
 .DevToolsConsole .parameter-undefined {
-    color: #80868a
+    color: var(--color-text-grey-1);
 }
 .DevToolsConsole .parameter-number,
 .DevToolsConsole .parameter-boolean,
 .DevToolsConsole .keyword-function {
-    color: #1a1aa6;
+    color: var(--color-text-blue);
 }
-.DevToolsConsole .parameter-function {
+.DevToolsConsole .parameter-string,
+.DevToolsConsole .parameter-regexp {
+    color: var(--color-text-red);
+}
+.DevToolsConsole .parameter-bigint {
+    color: var(--color-text-green);
+}
+.DevToolsConsole .parameter-function,
+.DevToolsConsole .parameter-object {
     font-style: italic;
+}
+.DevToolsConsole .preview {
+    display: flex;
+    align-items: center;
+}
+.DevToolsConsole .object-key {
+    color: var(--color-text-grey-2);
+}
+.DevToolsConsole .preview svg {
+    fill: var(--color-text-grey-2);
 }
