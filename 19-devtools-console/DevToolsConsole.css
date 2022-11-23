@@ -1,0 +1,90 @@
+.DevToolsConsole.light {
+    --color-background: rgb(255, 255, 255);
+    --color-background-warn: rgb(254, 251, 229);
+    --color-background-error: rgb(254, 241, 240);
+    --color-border-primary: rgb(203, 205, 209);
+    --color-border-light: rgb(240, 240, 240);
+    --color-border-warn: rgb(254, 245, 193);
+    --color-border-error: rgb(254, 215, 214);
+    --color-text-primary: rgb(48, 57, 66);
+    --color-text-secondary: rgb(95, 99, 103);
+    --color-text-warn: rgb(91, 59, 1);
+    --color-text-error: rgb(255, 0, 0);
+}
+
+.DevToolsConsole {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-border-primary);
+    background-color: var(--color-background);
+    font-family: ui-monospace, SFMono-Regular, SF Mono, 
+        Menlo, Consolas, Liberation Mono ,monospace;
+    font-size: 11px;
+    overflow-y: scroll;
+    cursor: default;
+}
+
+.DevToolsConsole .message {
+    display: flex;
+    padding: 2px 28px 2px 0;
+    margin-top: -1px;
+    position: relative;
+}
+.DevToolsConsole .gutter {
+    width: 28px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DevToolsConsole .content {
+    width: 100%;
+}
+.DevToolsConsole .caller {
+    float: right;
+    padding-left: 2px;
+    color: var(--color-text-secondary);
+    text-decoration: underline;
+}
+.DevToolsConsole .text {
+    margin: 0;
+    font-family: inherit;
+    white-space: pre-wrap;
+    width: 100%;
+}
+.DevToolsConsole .call {
+    color: var(--color-text-secondary);
+    text-decoration: underline;
+}
+.DevToolsConsole .log {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid var(--color-border-light);
+    color: var(--color-text-primary);
+    z-index: 0;
+}
+.DevToolsConsole .warn {
+    background-color: var(--color-background-warn);
+    border-top: 1px solid var(--color-border-warn);
+    border-bottom: 1px solid var(--color-border-warn);
+    color: var(--color-text-warn);
+    z-index: 1;
+}
+.DevToolsConsole .error {
+    background-color: var(--color-background-error);
+    border-top: 1px solid var(--color-border-error);
+    border-bottom: 1px solid var(--color-border-error);
+    color: var(--color-text-error);
+    z-index: 2;
+}
+.DevToolsConsole .parameter-null,
+.DevToolsConsole .parameter-undefined {
+    color: #80868a
+}
+.DevToolsConsole .parameter-number,
+.DevToolsConsole .parameter-boolean,
+.DevToolsConsole .keyword-function {
+    color: #1a1aa6;
+}
+.DevToolsConsole .parameter-function {
+    font-style: italic;
+}

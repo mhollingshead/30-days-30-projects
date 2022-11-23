@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./DevToolsConsole.css" />
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f2f2f2;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            margin: 0;
+            position: fixed;
+        }
+        #container {
+            width: 600px;
+            height: 750px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <input type="color" />
+    <script src="DevToolsConsole.js"></script>
+    <script>
+        new DevToolsConsole('#container');
+    </script>
+    <script src="./errors/inducers.js"></script>
+    <script>
+        console.log('Hello, Console!');
+        console.log(`Here's a warning logged by console.warn:`)
+        console.warn('Warning!');
+        console.log(`Here's a random JavaScript error logged by console.error:`);
+        errors.random();
+        console.log(`Here's a custom error created by new Error and logged by console.error:`);
+        console.error(new Error('Custom Error!'));
+        console.log(`The only notable differences between these logs and the Chrome DevTools logs are:\n\n1. Warnings and Errors are not collapsable (as we don't have detailed stacktrace information), and\n\n2. Links to files are note followable (as we don't have access to the Chrome DevTools frontend).`);
+        console.warn('Uh oh! Here come some parameters:');
+        console.log(true, 42, NaN, null, undefined, function(a, b) { return a + b });
+    </script>
+</body>
+</html>
