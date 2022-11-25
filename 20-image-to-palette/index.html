@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image to Palette</title>
+</head>
+
+<body>
+    <main>
+        <div class="modals">
+            <div class="form">
+                <div class="form-section">
+                    <div class="form-head">
+                        <h3>Upload file</h3>
+                        <span class="file-types">.png, .jpg, or .jpeg</span>
+                    </div>
+                    <div class="file-input">
+                        <div class="file-wrapper">
+                            <input class="file" type="file" id="file" accept=".png, .jpg, .jpeg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image-head">
+                    <h3>Image</h3>
+                </div>
+                <div class="image-wrapper">
+                    <canvas></canvas>
+                </div>
+            </div>
+            <div class="palette">
+                <div class="palette-head">
+                    <h3>Palette</h3>
+                </div>
+                <div class="palette-colors"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const getImageDimensions = image => {
+            let width, height;
+            if (image.width > image.height) {
+                width = Math.min(image.width, 608);
+                height = image.height * width / image.width;
+            } else {
+                height = Math.min(image.height, 288);
+                width = image.width * height / image.height;
+            }
+            return [width, height];
+        }
+
+        const getImageColors = imageData => {
+            const colors = [];
+            for (let i = 0; i < imageData.length; i += 4) {
+                colors.push({
+                    r: imageData[i],
+                    g: imageData[i + 1],
+                    b: imageData[i + 2]
+                });
+            }
+            return colors;
+        }
+
+        const findBiggestColorRange = (colors) => {
+            let rMin = Infinity;
+            let gMin = Infinity;
+            let bMin = Infinity;
+
+            let rMax = -Infinity;
+            let gMax = -Infinity;
+            let bMax = -Infinity;
+
+            colors.forEach((pixel) => {
+                rMin = Math.min(rMin, pixel.r);
+                gMin = Math.min(gMin, pixel.g);
+                bMin = Math.min(bMin, pixel.b);
+
+                rMax = Math.max(rMax, pixel.r);
+                gMax = Math.max(gMax, pixel.g);
+                bMax = Math.max(bMax, pixel.b);
+            });
+
+            const rRange = rMax - rMin;
+            const gRange = gMax - gMin;
+            const bRange = bMax - bMin;
+
+            const biggestRange = Math.max(rRange, gRange, bRange);
+            if (biggestRange === rRange) {
+                return "r";
+            } else if (biggestRange === gRange) {
+                return "g";
+            } else {
+                return "b";
+            }
+        };
+
+        const quantization = (colors, depth) => {
+            const MAX_DEPTH = 4;
+
+            if (depth === MAX_DEPTH || colors.length === 0) {
+                const color = colors.reduce((previous, current) => {
+                    previous.r += current.r;
+                    previous.g += current.g;
+                    previous.b += current.b;
+
+                    return previous;
+                }, { r: 0, g: 0, b: 0 });
+
+                color.r = Math.round(color.r / colors.length);
+                color.g = Math.round(color.g / colors.length);
+                color.b = Math.round(color.b / colors.length);
+
+                return [color];
+            }
+
+            const componentToSortBy = findBiggestColorRange(colors);
+            colors.sort((a, b) => {
+                return a[componentToSortBy] - b[componentToSortBy];
+            });
+
+            const mid = colors.length / 2;
+            return [
+                ...quantization(colors.slice(0, mid), depth + 1),
+                ...quantization(colors.slice(mid + 1), depth + 1),
+            ];
+        };
+
+        const renderPalette = palette => {
+            palette = [...new Set(palette.map(color => JSON.stringify(color)))].map(color => JSON.parse(color));
+            const paletteWrapper = document.querySelector('.palette-colors');
+            paletteWrapper.innerHTML = '';
+            palette.forEach(color => {
+                paletteWrapper.innerHTML += `<div class="palette-color">
+                    <div class="swatch" style="background-color: rgb(${Object.values(color).join(', ')});"></div>
+                    <input class="rgb" type="text" value="rgb(${Object.values(color).join(', ')})" onclick="this.select()" readonly />
+                </div>`;
+            });
+        }
+
+        const handleImageUpload = e => {
+            console.log('Image uploaded');
+            const image = new Image();
+            const file = e.target.files[0];
+            const fileReader = new FileReader();
+
+            fileReader.onload = () => {
+                image.onload = () => {
+                    const canvas = document.querySelector('canvas');
+                    const [width, height] = getImageDimensions(image);
+
+                    canvas.width = width;
+                    canvas.height = height;
+
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(image, 0, 0, width, height);
+
+                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    const colors = getImageColors(imageData.data);
+                    const palette = quantization(colors, 0);
+                    renderPalette(palette);
+                }
+                image.src = fileReader.result;
+            };
+            fileReader.readAsDataURL(file);
+        }
+
+        document.querySelector('.file').addEventListener('input', handleImageUpload);
+    </script>
+</body>
+
+</html>

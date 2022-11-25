@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    width: 640px;
+    margin: 0 auto;
+}
+
+input {
+    cursor: pointer;
+    padding: 1px 6px;
+}
+
+.form,
+.image {
+    margin-bottom: 1rem;
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form-head,
+.image-head,
+.palette-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.file-input {
+    width: 100%;
+    height: 6rem;
+    background-color: #fcfcfc;
+    border: 1px dashed #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.file-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.file-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.file-types {
+    color: grey;
+    font-weight: 400;
+    width: max-content;
+    font-size: 0.875rem;
+}
+
+.image-wrapper {
+    width: 640px;
+    height: 320px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.palette-colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.palette-color {
+    width: calc(25% - 0.5rem * 3 / 4);
+    margin-bottom: 0.5rem;
+}
+.rgb {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-size: 0.75rem;
+}
+
+.swatch {
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
